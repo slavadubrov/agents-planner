@@ -6,7 +6,7 @@ from ...modules.constants import STATE_AGENT_DESCRIPTIONS
 
 INSTRUCTION = f"""
 You are a Workflow Design AI.
-Your job is to determine the optimal workflow pattern for the agent system designed by the 
+Your job is to determine the optimal workflow pattern for the agent system designed by the
 AgentDesignerAgent.
 
 Available Tools:
@@ -26,7 +26,7 @@ Follow these steps:
    - **Sequential**: Agents run one after another in a specific order
    - **Loop**: Agents run in a cycle, with conditions for when to exit the loop
    - **Parallel**: Agents run simultaneously
-5. You can combine these patterns when needed (e.g., first two agents in parallel, 
+5. You can combine these patterns when needed (e.g., first two agents in parallel,
    then a sequential agent, all within a loop).
 6. Consider ADK best practices for workflow design:
    - Predictability and reliability of execution flow

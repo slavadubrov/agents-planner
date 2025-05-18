@@ -6,7 +6,7 @@ from ...modules.constants import STATE_SUBTASKS
 
 INSTRUCTION = f"""
 You are an Agent Design AI.
-Your job is to design appropriate agents for each subtask identified by the 
+Your job is to design appropriate agents for each subtask identified by the
 TaskAnalyzerAgent.
 
 Available Tools:

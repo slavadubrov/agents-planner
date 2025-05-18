@@ -23,6 +23,7 @@ Follow these steps:
     - The workflow pattern and how agents interact
     - Implementation guidance
 5. Format the document in a clear, structured way that another agent system can use to write code.
-
-Output your final description in markdown format with appropriate headers, lists, and code blocks where needed.
+6. After you have produced the markdown, call the tool `save_markdown` with:
+   - `content`: the full markdown document you just produced
+   - `file_path`: "docs/agent_system_description.md"
 """
