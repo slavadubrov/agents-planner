@@ -16,11 +16,12 @@ load_dotenv()
 app = typer.Typer()
 planning_agents = SequentialAgent(
     name="PlanningAgents",
-    sub_agents=[task_analyzer_agent, agent_designer_agent, workflow_designer_agent],
+    sub_agents=[
+        task_analyzer_agent,
+        agent_designer_agent,
+        workflow_designer_agent,
+        final_description_agent,
+    ],
 )
 
-agents_planner_agent = SequentialAgent(
-    name="AgentsPlannerAgent", sub_agents=[planning_agents, final_description_agent]
-)
-
-root_agent = agents_planner_agent
+root_agent = planning_agents
