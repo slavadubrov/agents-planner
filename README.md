@@ -90,7 +90,7 @@ or
 adk web
 ```
 
-The agent will prompt you for your requirements and then guide you through the planning process, generating a comprehensive agent system design.
+The agent will prompt you for your requirements and then guide you through the planning process, generating a comprehensive agent system design. After the workflow completes, the final report is saved to `docs/agent_system_description.md`.
 
 ## Development
 
