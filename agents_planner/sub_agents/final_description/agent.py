@@ -5,12 +5,16 @@ This agent is responsible for creating a comprehensive markdown description of t
 from crewai_tools import FileWriterTool
 from google.adk.agents.llm_agent import LlmAgent
 from google.adk.tools.crewai_tool import CrewaiTool
+import os
 
 from ... import MODEL
 from ...modules.constants import STATE_FINAL_DESCRIPTION
 from .prompt import (
     INSTRUCTION,
 )
+
+DOCS_DIR = "docs"
+os.makedirs(DOCS_DIR, exist_ok=True)
 
 save_markdown_tool = CrewaiTool(
     name="save_markdown",
@@ -26,3 +30,4 @@ final_description_agent = LlmAgent(
     tools=[save_markdown_tool],
     output_key=STATE_FINAL_DESCRIPTION,
 )
+
