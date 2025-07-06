@@ -45,19 +45,10 @@ The Agents Planner consists of several specialized sub-agents that work together
    - Python 3.12 or higher
    - [uv](https://github.com/astral-sh/uv) package manager
 
-2. **Installation:**
+2. **Install dependencies** (requires Python >=3.13):
 
-   Create and activate a virtual environment using uv:
-
-   ```bash
-   uv venv
-   source .venv/bin/activate
-   ```
-
-   Install the project and its dependencies:
-
-   ```bash
-   uv pip install -e .
+   ```sh
+   uv sync
    ```
 
 3. **Configuration:**
@@ -81,13 +72,13 @@ gcloud auth login
 To run the Agents Planner:
 
 ```bash
-adk run agents_planner
+uv run adk run agents_planner
 ```
 
 or
 
 ```bash
-adk web
+uv run adk web
 ```
 
 The agent will prompt you for your requirements and then guide you through the planning process, generating a comprehensive agent system design.
